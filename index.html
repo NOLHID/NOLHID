@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="media.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div class="menu_mobile">
+    <img id="burgermenu_img" src="img/burgermenu.jpg" class="burgermenu_img">
+  </div>
+  <div id="conteiner">
+  <div id="pcv">
+	<nav>
+  <ul class="topmenu">
+    <li class="mobile_header_display_none_hover"><a href="index.html">Начало</a></li>
+    <li class="mobile_header_display_none_hover"><a id="bottom" href="">Магазин</a></li>
+    <li class="mobile_header_display_none_hover"><a href="#">Школа</a>
+      <ul class="submenu">
+          <li class="mobile_header_display_none_hover"><a href="school5.html">5 класс</a>
+          <li class="mobile_header_display_none_hover"><a href="school6.html">6 класс</a>
+          <li class="mobile_header_display_none_hover"><a href="school7.html">7 класс</a>
+          <li class="mobile_header_display_none_hover"><a href="school8.html">8 класс</a>
+          <li class="mobile_header_display_none_hover"><a href="school9.html">9 класс</a>
+     </ul>
+    </li>
+    <li class="mobile_header_display_none_hover"><a href="">Веб-школа</a>
+    </li>
+
+    <li class="mobile_header_display_none_hover" id="online_page"><div class="online_page">
+      Онлайн
+  </ul>
+
+  </ul>
+</nav>
+</div>
+
+
+<div id="banner_one" class="banner_one">
+<h1>Обучение</h1>
+<div class="posterone_title">
+	Сейчас в многих странах карантин, и на удаленном обучение учителя не могут полностью и правельно обьяснить тему. Наша команда поможет вам сделать домашнее задание, изучить тему.
+</div>
+<div class="link_button_conteiner">
+<a href="" class="posterone_btn">Начать сейчас!</a>
+</div>
+<img src="img/foto1.jpg" class="poster_one">
+</div>
+
+
+<div class="white_one">
+</div>
+
+<div class="block_two">
+
+	<div id="scrool_javascript" class="shop_one">
+		<div class="shop_title">
+			Создадим вам сайт. На данный момент возможна создание сайта только в таком виде, без регистрации и админ панели.
+		</div>
+			<div id="shop_price_btn" class="shop_price_btn">Заказать прямо сейчас!</div>
+
+		<img class="shop_images" src="shop_img/shop1.jpg">
+	</div>
+	<div class="shop_two">
+
+		<div class="shop_title">
+			Поможем вам с домашнем заданием, и не понятной темой
+		</div>
+
+    <div id="shop_price_btn" class="shop_price_btn">Заказать прямо сейчас!</div>
+
+		<img class="shop_images" src="shop_img/shop2.jpg">
+	</div>
+	<div class="shop_three">
+
+		<div class="shop_title">
+			Обучим создавать сайты на основе html/css
+		</div>
+		
+      <div id="shop_price_btn" class="shop_price_btn">Заказать прямо сейчас!</div>
+		
+		<img class="shop_images" src="shop_img/shop3.jpg">
+	</div>	
+</div>
+
+
+
+
+
+
+
+
+</div>
+<div class="send_error">
+  <div id="error_online" class="error_online">
+    <div id="error_online_close" class="error_online_close">+</div>
+    <h3>Ошибка</h3>
+    Онлайн занятия на данный момент недоступны
+  </div>
+  <div id="error_program_line" class="error_program_line">
+    <h3>Ошибка</h3>
+    Теория по програмированию на данный момент отключена
+  </div>
+</div>
+
+<div class="send_error">
+  <div id="error_shop" class="error_shop">
+    <div id="error_shop_close" class="error_shop_close">+</div>
+    <h3>Внимание!</h3>
+    Магазин не работает в бета версии. Свяжитесь с нами в чате!
+  </div>
+</div>
+</div>
+
+
+
+
+<div id="menu_mobile_open" class="menu_mobile_open">
+  <div id="menu_mobile_close">+</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    $('#bottom').click(function(){
+        $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+        return false;
+    });
+ 
+});
+    banner_one.addEventListener('scrollTop', function(){
+      var banner_one = document.getElementById('banner_one');
+      banner_one.style.display = 'none';
+    });
+  
+    var online_page = document.getElementById('online_page');
+  var error_online = document.getElementById('error_online');
+	online_page.addEventListener('click', function(){
+		error_online.style.display = ('block')
+		setTimeout(function(){error_online.style.display = ('none')}, 7000);
+	})
+  var error_online_close = document.getElementById('error_online_close');
+  error_online_close.addEventListener('click', function(){
+    error_online.style.display = ('none')
+  });
+
+
+      var shop_price_btn = document.getElementById('shop_price_btn');
+  var error_shop = document.getElementById('error_shop');
+  shop_price_btn.addEventListener('click', function(){
+    error_shop.style.display = ('block')
+    setTimeout(function(){error_shop.style.display = ('none')}, 7000);
+  })
+  var error_shop_close = document.getElementById('error_shop_close');
+  error_shop_close.addEventListener('click', function(){
+    error_shop.style.display = ('none')
+  });
+
+
+var burgermenu_img = document.getElementById('burgermenu_img');
+var conteiner = document.getElementById('conteiner');
+var menu_mobile_close = document.getElementById('menu_mobile_close');
+var pcv_menu_standart = document.getElementById('pcv');
+burgermenu_img.addEventListener('click', function(){
+  conteiner.style.display = ('none');
+  burgermenu_img.style.display = ('none');
+  menu_mobile_open.style.display = ('block');
+  menu_mobile_close.style.display = ('block');
+  pcv_menu_standart.style.display = ('block');
+})
+menu_mobile_close.addEventListener('click', function(){
+  menu_mobile_open.style.display = ('none');
+  menu_mobile_close.style.display = ('none');
+  burgermenu_img.style.display = ('block');
+  conteiner.style.display = ('block');
+  pcv_menu_standart.style.display = ('none');
+})
+</script>
+
+
+
+  <script>
+window.replainSettings = { id: '1be61324-7599-441f-86d6-4fbe0f1ed05a' };
+(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+</script>
+</body>
+</html>
