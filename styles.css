@@ -1,0 +1,372 @@
+ * {
+    margin: 0;
+    padding: 0;
+   }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f5f5f5;
+}
+nav { background: white; }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .4s ease-in-out;
+}
+nav .online_page {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .4s ease-in-out;
+}
+.topmenu {
+  text-align: center;
+  padding: 10px 0;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background: #d2d2d2;
+  top: 16px;
+  box-shadow: 4px -2px 0 #d2d2d2;
+  transform: rotate(30deg);
+}
+.topmenu > li:last-child:after {
+  background: none;
+  box-shadow: none;
+}
+.topmenu > li > a {
+  padding: 12px 26px;
+  color: #767676;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Exo 2', sans-serif;
+}
+.online_page {
+  padding: 12px 26px;
+  color: #767676;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.topmenu li a:hover { color: #c0a97a; }
+.topmenu .online_page:hover { color: #c0a97a; }
+.submenu {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 210px;
+  margin-left: -105px;
+  background: #fafafa;
+  border: 1px solid #ededed;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.8);
+  transition: .4s ease-in-out;
+}
+.submenu li a {
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid #efefef;
+  font-size: 12px;
+  color: #484848;
+  font-family: 'Kurale', serif;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.poster_one{
+	height: 500px;
+	width: 100%;
+}
+.posterone_title{
+	height: 200px;
+	width: 300px;
+	position: absolute;
+	color: white;
+	margin-left: 30%;
+	display: block;
+	font-family: verdana;
+	width: 600px;
+	margin-top: 10%;
+	padding: 10px;
+}
+.posterone_btn{
+	position: absolute;
+	font-size: 15px;
+	color: white;
+	border: 2px solid white;
+	height: 40px;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+
+}
+h1{
+	position: absolute;
+	margin-left: 45%;
+	color: white;
+	margin-top: 50px;
+}
+a{
+	text-decoration: none;
+}
+.link_button_conteiner{
+	position: absolute;
+	margin-left: 60%;
+	margin-top: 22%;
+}
+.banner_one a:hover{
+		background: white;
+		color: black;
+}
+.banner_one a{
+	transition: .4s ease-in-out;
+}
+.white_one{
+	height: 150px;
+	width: 100%;
+	background: #f7f7f7;
+}
+.shop_one{
+	height: 30%;
+	width: 40%;
+}
+.shop_two{
+	height: 30%;
+	width: 40%;
+}
+.shop_three{
+	height: 30%;
+	width: 40%;
+}
+
+.shop_images{
+	height: 450px;
+	width: 400px;
+	margin-left: 5%;
+}
+.block_two{
+	display: flex;
+	justify-content: space-between;
+}
+.shop_title{
+	position: absolute;
+	width: 200px;
+	color: white;
+	margin-left: 6%;
+	margin-top: 8%;
+	font-size: 17px;
+	width: 300px;
+	font-family: verdana;
+
+}
+.shop_price_btn{
+	width: 17%;
+	height: 50px;
+	border: 1px solid white;
+	position: absolute;
+	color: white;
+	margin-top: 25%;
+	margin-left: 7%;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+}
+.shop_price_btn:hover{
+    background: white;
+    color: black;
+}
+.shop_two_title{
+	position: absolute;
+	width: 200px;
+	color: white;
+	margin-left: 6%;
+	margin-top: 8%;
+	font-size: 17px;
+	width: 300px;
+	font-family: verdana;
+}
+.shop_three_title{
+	position: absolute;
+	width: 200px;
+	color: white;
+	margin-left: 6%;
+	margin-top: 8%;
+	font-size: 17px;
+	width: 300px;
+	font-family: verdana;
+}
+.block_two a{
+	transition: 1s all ease;
+}
+.block_two a:hover{
+	background: white;
+	color: black;
+}
+.share_logo{
+	width: 60px;
+	height: 60px;
+	left: 0;
+	top: 0;
+	position: fixed;
+	transform: translate(1280px, 480px );
+}
+.news_one{
+	height: 400px;
+	width: 380px;
+	background: #d6d6d6;
+}
+.news_two{
+	height: 400px;
+	width: 380px;
+	background: #d6d6d6;
+}
+.news_three{
+	height: 400px;
+	width: 380px;
+	background: #d6d6d6;
+}
+.news_four{
+	height: 400px;
+	width: 380px;
+	background: #d6d6d6;
+}
+.news_block_one{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 150px;
+}
+.news_block_two{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+
+	.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+.show {display: block;}
+
+.mobile_button_menu_header{
+  display: none;
+}
+.send_error{
+  position: absolute;
+}
+.error_online{
+
+}
+.error_online{
+	height: 70px;
+	width: 400px;
+	border: red;
+	background: #ededed;
+	margin-top: 530px;
+  padding: 10px;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  position: fixed;
+  margin-left: 10px;
+  display: none;
+}
+.error_program_line{
+  height: 100px;
+	width: 400px;
+	border: red;
+	background: #f5f5f5;
+	margin-top: 300px;
+	display: none;
+}
+.online_page{
+  cursor: pointer;
+
+}
+.error_online_close{
+  transform: rotate(43deg);
+  position: absolute;
+  margin-left: 375px;
+  font-size: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.error_shop{
+  height: 70px;
+  width: 400px;
+  border: red;
+  background: #ededed;
+  margin-top: 530px;
+  padding: 10px;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  position: fixed;
+  margin-left: 10px;
+  display: none;
+}
+.error_shop_close{
+  transform: rotate(43deg);
+  position: absolute;
+  margin-left: 375px;
+  font-size: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,151 @@
+@media screen and (min-width: 1600px) {
+	.link_button_conteiner{
+	position: absolute;
+	margin-left: 60%;
+	margin-top: 17%;
+}
+.shop_title{
+	position: absolute;
+	width: 200px;
+	color: white;
+	margin-left: 10%;
+	margin-top: 6%;
+	font-size: 17px;
+	width: 300px;
+	font-family: verdana;
+
+}
+.shop_price_btn{
+	margin-top: 17%;
+	margin-left: 10%;
+	width: 15%;
+}
+.shop_images{
+	height: 500px;
+	width: 450px;
+	margin-left: 16%;
+}
+.fab {
+    left: 98%;
+}
+.posterone_title{
+	margin-left: 33%;
+}
+}
+@media screen and (min-width: 1600px) and (max-width: 1700px) {
+	.shop_price_btn{
+	margin-top: 20%;
+	margin-left: 8%;
+	width: 18%;
+}
+.shop_images{
+	height: 500px;
+	width: 450px;
+	margin-left: 10%;
+}
+.shop_title{
+	margin-left: 8%;
+	margin-top: 6%;
+}
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+	.shop_price_btn{
+	margin-top: 22%;
+	margin-left: 8%;
+}
+.shop_images{
+	height: 450px;
+	width: 400px;
+	margin-left: 11%;
+}
+.shop_title{
+	margin-left: 8%;
+	margin-top: 6%;
+}
+}
+@media screen and (max-width: 1500px){
+	.shop_price_btn{
+		width: 18%;
+	}
+}
+
+
+
+/*Iphone 6 7 8 standart*/
+/*Iphone x*/
+@media screen and (min-width: 350px) and (max-width: 400px) {
+  .poster_one{
+    width: 100%;
+    height: 50%;
+  }
+  .posterone_title{
+    height: 200px;
+    width: 350px;
+    margin-left: 5%;
+    font-size: 12px;
+    margin-top: 25%;
+  }
+  .posterone_btn{
+    display: none;
+  }
+  h1{
+    font-size: 19px;
+    margin-left: 40%;
+  }
+  .mob_none{
+    display: none;
+  }
+  .mobile_button_menu_header{
+  display: block;
+}
+ .mobile_header_display_none_hover{
+  display: none;
+ }
+ .mobile_button_menu_header:hover{
+  
+ }
+ .shop_one{
+ 	margin-left: 0;
+ 	left: 0;
+ 	width: 100%;
+ }
+ .shop_two{
+
+ }
+ .shop_three{
+
+ }
+ .block_two{
+ 	flex-direction: column;
+ }
+.shop_price_btn{
+	
+}
+.shop_images{
+	
+}
+.shop_title{
+	
+}
+/*Iphone 6-8 plus*/
+@media screen and (min-width: 400px) and (max-width: 450px) {
+
+}
+/*Mini format +-iphone 5*/
+@media screen and (min-width: 320px) and (max-width: 350px){
+
+}
+/* galaxy s5 */
+@media screen and (min-width: 360px) and (max-width: 370px) {
+
+}
+
+
+/* ipad */
+@media screen and (min-width: 750px) and (max-width: 800px){
+
+}
+/* ipad pro */
+@media screen and (min-width: 1000px){
+
+}
